@@ -1,0 +1,23 @@
+input{
+  float: left;
+  color: #00ffff;
+  padding: 6px 6px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.mat-button-toggle {
+  border: 1px solid;
+  height: 33px;
+  width: 50px;
+}
+
+.mat-icon {
+  padding-bottom: 16px;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+

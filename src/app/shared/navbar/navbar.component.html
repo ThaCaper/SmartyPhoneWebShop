@@ -1,0 +1,18 @@
+<mat-toolbar>
+    <mat-toolbar-row>
+      <span>SmartyPhones</span>
+      <span class="spacer"></span>
+      <mat-button-toggle-group>
+        <input matInput type="search" placeholder="Search">
+        <mat-button-toggle (search)="$event"><mat-icon>search</mat-icon></mat-button-toggle>
+      </mat-button-toggle-group>
+      <span class="spacer"></span>
+      <mat-icon>person</mat-icon>
+      <span></span>
+      <span><mat-icon>shopping_cart</mat-icon></span>
+      <mat-icon>person</mat-icon>
+    </mat-toolbar-row>
+    <mat-toolbar-row>
+      <span>Second Line</span>
+    </mat-toolbar-row>
+</mat-toolbar>
