@@ -1,1 +1,29 @@
-<p>login works!</p>
+
+
+
+
+
+
+<mat-card class="example-card">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>Login</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+
+    <form class="example-form">
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Bruger navn" value="AdminAnn">
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <input matInput type="password" placeholder="kodeord">
+
+      </mat-form-field>
+      <div class="example-button-row">
+        <button mat-raised-button color="primary">Login</button>
+        <a routerLink="/creatUser" class="CreatUserLink">opret en bruger</a>
+      </div>
+    </form>
+
+  </mat-card-content>
+</mat-card>
