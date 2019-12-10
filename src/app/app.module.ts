@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatButtonToggleModule, MatIconModule, MatInputModule, MatToolbarModule} from '@angular/material';
+import {MatButtonToggleModule, MatCardModule, MatIconModule, MatInputModule, MatTableModule, MatToolbarModule} from '@angular/material';
+import { ShoppingCartComponent } from './shoppingCart/shopping-cart.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    ShoppingCartComponent
   ],
   imports: [
     BrowserModule,
@@ -19,7 +21,9 @@ import {MatButtonToggleModule, MatIconModule, MatInputModule, MatToolbarModule} 
     MatToolbarModule,
     MatInputModule,
     MatIconModule,
-    MatButtonToggleModule
+    MatButtonToggleModule,
+    MatCardModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

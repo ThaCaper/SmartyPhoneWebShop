@@ -1,18 +1,22 @@
 <mat-toolbar>
     <mat-toolbar-row>
-      <span>SmartyPhones</span>
+      <span class="header">SmartyPhones</span>
       <span class="spacer"></span>
       <mat-button-toggle-group>
         <input matInput type="search" placeholder="Search">
-        <mat-button-toggle (search)="$event"><mat-icon>search</mat-icon></mat-button-toggle>
+        <mat-button-toggle (search)="$event">
+          <mat-icon class="icon">search</mat-icon>
+        </mat-button-toggle>
       </mat-button-toggle-group>
-      <span class="spacer"></span>
-      <mat-icon>person</mat-icon>
-      <span></span>
-      <span><mat-icon>shopping_cart</mat-icon></span>
-      <mat-icon>person</mat-icon>
+      <mat-icon class="icon-spacer">contact_support</mat-icon>
+      <mat-icon class="icon-spacer">person</mat-icon>
+      <mat-icon class="icon-spacer" routerLink="/cart">shopping_cart</mat-icon>
     </mat-toolbar-row>
-    <mat-toolbar-row>
-      <span>Second Line</span>
+    <mat-toolbar-row class="mat-toolbar-second-row">
+<div class="second-row">
+  <span>SmartPhones</span>
+  <span class="spacer"></span>
+  <span>Covers</span>
+</div>
     </mat-toolbar-row>
 </mat-toolbar>

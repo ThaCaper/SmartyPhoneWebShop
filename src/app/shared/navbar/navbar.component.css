@@ -1,6 +1,6 @@
 input{
   float: left;
-  color: #00ffff;
+  color: #333333;
   padding: 6px 6px;
   text-decoration: none;
   font-size: 16px;
@@ -17,7 +17,31 @@ input{
 }
 
 .spacer {
-  flex: 1 1 auto;
+  margin: auto;
 }
 
+.icon-spacer {
+  margin: 90px
+}
 
+.mat-toolbar-second-row {
+  background-color: #333333;
+  color: aliceblue;
+  height: 40px
+}
+
+.header {
+  color: #333333;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.second-row {
+  margin: auto;
+  text-align-all: center;
+}
+
+.second-row span {
+  margin: 50px;
+  font-size: large;
+}
