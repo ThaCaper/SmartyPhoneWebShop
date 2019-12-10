@@ -16,6 +16,8 @@ import {
 } from '@angular/material';
 import { LoginComponent } from './pages/login/login.component';
 import { CreatUserComponent } from './pages/creat-user/creat-user.component';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
+import {from} from 'rxjs';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,8 @@ import { CreatUserComponent } from './pages/creat-user/creat-user.component';
     MatButtonToggleModule,
     MatCardModule,
     MatButtonModule,
-    MatSelectModule
+    MatSelectModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
