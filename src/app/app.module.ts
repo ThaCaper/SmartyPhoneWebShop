@@ -18,13 +18,16 @@ import { LoginComponent } from './pages/login/login.component';
 import { CreatUserComponent } from './pages/creat-user/creat-user.component';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 import {from} from 'rxjs';
+import {ReactiveFormsModule} from '@angular/forms';
+import { FontPagesComponent } from './pages/font-pages/font-pages.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     LoginComponent,
-    CreatUserComponent
+    CreatUserComponent,
+    FontPagesComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +40,8 @@ import {from} from 'rxjs';
     MatCardModule,
     MatButtonModule,
     MatSelectModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
