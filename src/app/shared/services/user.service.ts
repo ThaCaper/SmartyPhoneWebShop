@@ -3,7 +3,7 @@ import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {Observable} from 'rxjs';
 
 import {environment} from '../../../environments/environment';
-import {AuthenticationService} from './authentication-service.service';
+import {AuthenticationService} from './authentication.service';
 import {User} from '../modules/user';
 
 
@@ -24,11 +24,6 @@ export class UserService {
   adduser(user: User): Observable<User> {
     return this.http.post<User>(this.apiUrl, user, httpOptions);
   }
-  getUsers(): Observable<User[]> {
-    httpOptions.headers =
-      httpOptions.headers.set('Authorization', 'Bearer ' + this.authenticationService.getToken());
-    return this.http.get<User[]>(this.apiUrl, httpOptions);
-  }
   getUserById(id: number): Observable<User> {
     httpOptions.headers =
       httpOptions.headers.set('Authorization', 'Bearer ' + this.authenticationService.getToken());
@@ -38,10 +33,5 @@ export class UserService {
     httpOptions.headers =
       httpOptions.headers.set('Authorization', 'Bearer ' + this.authenticationService.getToken());
     return this.http.put<User>(this.apiUrl + '/' + user.id, user, httpOptions);
-  }
-  deleteUser(id: number): Observable<any> {
-    httpOptions.headers =
-      httpOptions.headers.set('Authorization', 'Bearer ' + this.authenticationService.getToken());
-    return this.http.delete(this.apiUrl + '/' + id , httpOptions);
   }
 }

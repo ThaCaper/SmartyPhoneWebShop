@@ -10,7 +10,7 @@ import {
   MatButtonToggleModule,
   MatCardModule,
   MatIconModule,
-  MatInputModule,
+  MatInputModule, MatProgressSpinnerModule,
   MatSelectModule, MatTableModule,
   MatToolbarModule
 } from '@angular/material';
@@ -20,7 +20,12 @@ import {HttpClient, HttpClientModule} from '@angular/common/http';
 import {from} from 'rxjs';
 import {ReactiveFormsModule} from '@angular/forms';
 import { FontPagesComponent } from './pages/font-pages/font-pages.component';
-import { ShoppingCartComponent } from './shoppingCart/shopping-cart.component';
+import { ShoppingCartComponent } from './pages/shoppingCart/shopping-cart.component';
+import { CoversListComponent } from './pages/covers/covers-list/covers-list.component';
+import { CoversDetailsComponent } from './pages/covers/covers-details/covers-details.component';
+import { SmartphonesDetailsComponent } from './pages/smartphones/smartphones-details/smartphones-details.component';
+import { SmartphonesListComponent } from './pages/smartphones/smartphones-list/smartphones-list.component';
+import {FlexModule} from '@angular/flex-layout';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +33,11 @@ import { ShoppingCartComponent } from './shoppingCart/shopping-cart.component';
     LoginComponent,
     CreatUserComponent,
     FontPagesComponent,
-    ShoppingCartComponent
+    ShoppingCartComponent,
+    CoversListComponent,
+    CoversDetailsComponent,
+    SmartphonesDetailsComponent,
+    SmartphonesListComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +52,9 @@ import { ShoppingCartComponent } from './shoppingCart/shopping-cart.component';
     MatSelectModule,
     HttpClientModule,
     ReactiveFormsModule,
-    MatTableModule
+    MatTableModule,
+    FlexModule,
+    MatProgressSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -3,7 +3,11 @@ import { Routes, RouterModule } from '@angular/router';
 import {LoginComponent} from './pages/login/login.component';
 import {CreatUserComponent} from './pages/creat-user/creat-user.component';
 import {FontPagesComponent} from './pages/font-pages/font-pages.component';
-import {ShoppingCartComponent} from './shoppingCart/shopping-cart.component';
+import {ShoppingCartComponent} from './pages/shoppingCart/shopping-cart.component';
+import {CoversListComponent} from './pages/covers/covers-list/covers-list.component';
+import {CoversDetailsComponent} from './pages/covers/covers-details/covers-details.component';
+import {SmartphonesListComponent} from './pages/smartphones/smartphones-list/smartphones-list.component';
+import {SmartphonesDetailsComponent} from './pages/smartphones/smartphones-details/smartphones-details.component';
 
 
 const routes: Routes = [
@@ -11,7 +15,11 @@ const routes: Routes = [
   { path: 'creatUser', component: CreatUserComponent },
   { path: 'font-pages', component: FontPagesComponent },
   { path: 'home', component: FontPagesComponent },
-  { path: 'cart', component: ShoppingCartComponent }
+  { path: 'cart', component: ShoppingCartComponent },
+  { path: 'covers', component: CoversListComponent },
+  { path: 'covers/:id', component: CoversDetailsComponent },
+  { path: 'smartPhones', component: SmartphonesListComponent },
+  { path: 'smartPhones/:id', component: SmartphonesDetailsComponent }
 ];
 
 @NgModule({
