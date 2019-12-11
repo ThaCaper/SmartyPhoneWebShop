@@ -11,7 +11,7 @@ import {
   MatCardModule,
   MatIconModule,
   MatInputModule,
-  MatSelectModule,
+  MatSelectModule, MatTableModule,
   MatToolbarModule
 } from '@angular/material';
 import { LoginComponent } from './pages/login/login.component';
@@ -42,7 +42,8 @@ import { ShoppingCartComponent } from './shoppingCart/shopping-cart.component';
     MatButtonModule,
     MatSelectModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

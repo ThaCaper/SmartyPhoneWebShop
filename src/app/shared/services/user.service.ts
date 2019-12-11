@@ -4,7 +4,7 @@ import {Observable} from 'rxjs';
 
 import {environment} from '../../../environments/environment';
 import {AuthenticationService} from './authentication-service.service';
-import {User} from '../modules/User';
+import {User} from '../modules/user';
 
 
 const httpOptions = {
