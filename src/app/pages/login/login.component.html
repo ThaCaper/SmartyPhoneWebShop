@@ -13,10 +13,10 @@
 
     <form class="example-form" [formGroup]="loginForm" (ngSubmit)="Login()">
       <mat-form-field class="example-full-width">
-        <input matInput placeholder="Bruger navn" value="AdminAnn" formControlName="username">
+        <input matInput placeholder="Bruger navn"  formControlName="username" required>
       </mat-form-field>
       <mat-form-field class="example-full-width">
-        <input matInput type="password" placeholder="kodeord" formControlName="password">
+        <input matInput type="password" placeholder="kodeord" formControlName="password" required>
 
       </mat-form-field>
       <div class="example-button-row">

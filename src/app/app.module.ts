@@ -10,7 +10,7 @@ import {
   MatButtonToggleModule,
   MatCardModule,
   MatIconModule,
-  MatInputModule,
+  MatInputModule, MatMenuModule,
   MatSelectModule, MatTableModule,
   MatToolbarModule
 } from '@angular/material';
@@ -21,6 +21,8 @@ import {from} from 'rxjs';
 import {ReactiveFormsModule} from '@angular/forms';
 import { FontPagesComponent } from './pages/font-pages/font-pages.component';
 import { ShoppingCartComponent } from './shoppingCart/shopping-cart.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { MinSideComponent } from './pages/min-side/min-side.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +30,9 @@ import { ShoppingCartComponent } from './shoppingCart/shopping-cart.component';
     LoginComponent,
     CreatUserComponent,
     FontPagesComponent,
-    ShoppingCartComponent
+    ShoppingCartComponent,
+    ContactComponent,
+    MinSideComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +47,8 @@ import { ShoppingCartComponent } from './shoppingCart/shopping-cart.component';
     MatSelectModule,
     HttpClientModule,
     ReactiveFormsModule,
-    MatTableModule
+    MatTableModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
