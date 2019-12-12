@@ -22,7 +22,7 @@ export class UserService {
   constructor(private http: HttpClient, private authenticationService: AuthenticationService) { }
 
   adduser(user: User): Observable<User> {
-    return this.http.post<User>(this.apiUrl, user);
+    return this.http.post<User>(this.apiUrl, user, httpOptions);
   }
   getUserById(id: number): Observable<User> {
     httpOptions.headers =
