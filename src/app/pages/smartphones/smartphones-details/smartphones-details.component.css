@@ -1,0 +1,23 @@
+.mat-card {
+  width: 1000px;
+  height: 600px;
+  padding: 10px;
+}
+
+.mat-card-items {
+  height: 550px;
+}
+.mat-card-title {
+  margin-left: 10px
+}
+.mat-card-header {
+  margin-top: 100px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.mat-button-toggle {
+  background: #333333;
+  color: aliceblue;
+}

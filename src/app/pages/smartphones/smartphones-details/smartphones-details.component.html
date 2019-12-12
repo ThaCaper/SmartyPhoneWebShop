@@ -1,1 +1,29 @@
-<p>smartphones-details works!</p>
+<div fxLayout="row"
+     fxFill
+     fxLayoutGap="10px">
+  <div fxLayoutAlign="center center">
+    <div fxFlex="50">
+      <mat-card>
+        <mat-card-title-group>
+          <mat-card-title>{{phone.name}}</mat-card-title>
+        </mat-card-title-group>
+        <mat-card class="mat-card-items mat-elevation-z0">
+          <mat-card-content fxFlex="70">
+            <img width="500" height="500">
+          </mat-card-content>
+          <mat-card-content fxLayout="column wrap">
+            <mat-card-title>Detaljer</mat-card-title>
+            <p>CPU: {{phone.cpuType}}</p>
+            <p>Operativ system: {{phone.os}}</p>
+            <p>Camera: {{phone.camera}}</p>
+            <p>Skærmstørrelse: {{phone.screen}}</p>
+            <p>Hukommelse: {{phone.memory}}</p>
+            <p>På lager: {{phone.stock}} stk</p>
+            <mat-card-header> {{phone.price}},-</mat-card-header>
+            <mat-button-toggle (click)="addToBasket()">Add to cart</mat-button-toggle>
+          </mat-card-content>
+        </mat-card>
+      </mat-card>
+    </div>
+  </div>
+</div>

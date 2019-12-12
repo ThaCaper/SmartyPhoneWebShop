@@ -6,7 +6,7 @@ import {FontPagesComponent} from './pages/font-pages/font-pages.component';
 import {ShoppingCartComponent} from './pages/shoppingCart/shopping-cart.component';
 import {CoversListComponent} from './pages/covers/covers-list/covers-list.component';
 import {CoversDetailsComponent} from './pages/covers/covers-details/covers-details.component';
-import {SmartphonesListComponent} from './pages/smartphones/smartphones-list/smartphones-list.component';
+import {SmartPhonesListComponent} from './pages/smartphones/smartphones-list/smartphones-list.component';
 import {SmartphonesDetailsComponent} from './pages/smartphones/smartphones-details/smartphones-details.component';
 
 
@@ -18,7 +18,7 @@ const routes: Routes = [
   { path: 'cart', component: ShoppingCartComponent },
   { path: 'covers', component: CoversListComponent },
   { path: 'covers/:id', component: CoversDetailsComponent },
-  { path: 'smartPhones', component: SmartphonesListComponent },
+  { path: 'smartPhones', component: SmartPhonesListComponent },
   { path: 'smartPhones/:id', component: SmartphonesDetailsComponent }
 ];
 

@@ -8,7 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {
   MatButtonModule,
   MatButtonToggleModule,
-  MatCardModule,
+  MatCardModule, MatDividerModule, MatGridListModule,
   MatIconModule,
   MatInputModule, MatProgressSpinnerModule,
   MatSelectModule, MatTableModule,
@@ -24,7 +24,7 @@ import { ShoppingCartComponent } from './pages/shoppingCart/shopping-cart.compon
 import { CoversListComponent } from './pages/covers/covers-list/covers-list.component';
 import { CoversDetailsComponent } from './pages/covers/covers-details/covers-details.component';
 import { SmartphonesDetailsComponent } from './pages/smartphones/smartphones-details/smartphones-details.component';
-import { SmartphonesListComponent } from './pages/smartphones/smartphones-list/smartphones-list.component';
+import { SmartPhonesListComponent } from './pages/smartphones/smartphones-list/smartphones-list.component';
 import {FlexModule} from '@angular/flex-layout';
 @NgModule({
   declarations: [
@@ -37,7 +37,7 @@ import {FlexModule} from '@angular/flex-layout';
     CoversListComponent,
     CoversDetailsComponent,
     SmartphonesDetailsComponent,
-    SmartphonesListComponent
+    SmartPhonesListComponent
   ],
   imports: [
     BrowserModule,
@@ -52,9 +52,11 @@ import {FlexModule} from '@angular/flex-layout';
     MatSelectModule,
     HttpClientModule,
     ReactiveFormsModule,
-    MatTableModule,
     FlexModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    MatDividerModule,
+    MatGridListModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

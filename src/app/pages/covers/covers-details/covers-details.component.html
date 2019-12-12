@@ -1,50 +1,30 @@
-<div *ngIf="cover">
-  <div fxLayout="column"
-       fxFill
-       fxLayoutGap="10px">
-    <div fxLayout="row" fxLayoutAlign="center top">
-      <mat-card-header>
-        <h1>Details</h1>
-      </mat-card-header>
-      <mat-card fxflex="33">
-        <form [formGroup]="coverForm">
-          <div fxLayout="column">
-            <mat-form-field>
-              <input matInput placeholder="Id" formControlName="id">
-            </mat-form-field>
-            <mat-form-field>
-              <input matInput placeholder="Name" formControlName="name">
-            </mat-form-field>
-            <mat-form-field>
-              <input matInput placeholder="Type of Brand" formControlName="brand">
-            </mat-form-field>
-            <mat-form-field>
-              <input matInput placeholder="Type of Model" formControlName="model">
-            </mat-form-field>
-            <mat-form-field>
-              <input matInput placeholder="Color" formControlName="color">
-            </mat-form-field>
-            <mat-form-field>
-              <input matInput placeholder="Material" formControlName="mats">
-            </mat-form-field>
-            <mat-form-field>
-              <input matInput type="number" placeholder="Price" formControlName="price">
-            </mat-form-field>
-            <mat-form-field>
-              <input type="number" matInput placeholder="Stock" formControlName="stock">
-            </mat-form-field>
-          </div>
-        </form>
+<div fxLayout="row"
+     fxFill
+     fxLayoutGap="10px">
+  <div fxLayout="row"
+       fxLayoutAlign="center center">
+    <div fxFlex="50">
+      <mat-card>
+        <mat-card-title-group>
+          <mat-card-title>{{cover.name}}</mat-card-title>
+        </mat-card-title-group>
+
+        <mat-card class="mat-card-items mat-elevation-z0">
+          <mat-card-content fxFlex="70">
+            <img width="500" height="500">
+          </mat-card-content>
+          <mat-card-content fxLayout="column wrap">
+            <mat-card-title>Detaljer</mat-card-title>
+            <p>Kan bruges til: {{cover.typeOfBrand}} {{cover.typeOfModel}}</p>
+            <p>Farve: {{cover.color}}</p>
+            <p>Materiale: {{cover.material}}</p>
+            <p>På lager: {{cover.stock}} stk</p>
+            <mat-card-header> {{cover.price}},-</mat-card-header>
+            <mat-button-toggle (click)="addToBasket()">Add to cart</mat-button-toggle>
+        </mat-card-content>
+        </mat-card>
       </mat-card>
     </div>
-    <div fxLayout="row">
-      <mat-button-toggle (click)="addToBasket()">Add to cart</mat-button-toggle>
-    </div>
   </div>
 </div>
-<div *ngIf="!cover">
-  <h2>No Cover found</h2>
-  <div fxLayout="row">
-    <mat-button-toggle routerLink="/covers"><--</mat-button-toggle>
-  </div>
-</div>
+

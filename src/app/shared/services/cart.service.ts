@@ -18,13 +18,13 @@ export class CartService {
       qty: 1,
       priceWhenBought: product.price,
       productId: product.id,
-      orderId: 0
+      product
     });
     localStorage.setItem('currentOrder', JSON.stringify(order));
 
   }
 
-  getBasket(): string {
+  getBasket(): Order {
     const currentOrder = JSON.parse(localStorage.getItem('currentOrder'));
     if (currentOrder) {
       return currentOrder;
