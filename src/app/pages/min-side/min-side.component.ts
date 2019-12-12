@@ -10,8 +10,8 @@ import {ActivatedRoute, Router} from '@angular/router';
   styleUrls: ['./min-side.component.css']
 })
 export class MinSideComponent implements OnInit {
-user: User;
-id: number;
+
+
   constructor() { }
 
   ngOnInit() {
