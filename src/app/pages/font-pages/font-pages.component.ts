@@ -8,13 +8,11 @@ import {AuthenticationService} from '../../shared/services/authentication.servic
 })
 export class FontPagesComponent implements OnInit {
 
-  constructor(private authenticationService: AuthenticationService) { }
+  constructor() { }
 
   ngOnInit() {
   }
 
-  logout() {
-    this.authenticationService.Logout();
-  }
+
 
 }
