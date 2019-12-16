@@ -6,7 +6,8 @@ import {Order} from '../modules/order';
   providedIn: 'root'
 })
 export class CartService {
-
+  orders: Order;
+  productsList: Product[];
   constructor() { }
 
   addToBasket(products: Product) {
@@ -18,10 +19,10 @@ export class CartService {
       product: products,
       qty: 1,
       priceWhenBought: products.price,
-      productId: products.id
+      productId: products.id,
     });
+    ;
     localStorage.setItem('currentOrder', JSON.stringify(order));
-
   }
 
   getBasket(): Order {
@@ -31,5 +32,11 @@ export class CartService {
     } else {
       return null;
     }
+  }
+
+  getTotal() {
+  return this.orders.orderLines
+    .map(ol => ol.product.price * ol.qty)
+    .reduce((a, b) => a + b, 0);
   }
 }
