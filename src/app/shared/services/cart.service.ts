@@ -9,16 +9,16 @@ export class CartService {
 
   constructor() { }
 
-  addToBasket(products: Product) {
+  addToBasket(product: Product) {
     let order = JSON.parse(localStorage.getItem('currentOrder')) as Order;
     if (!order) {
       order = new Order();
     }
     order.orderLines.push({
-      product: products,
       qty: 1,
-      priceWhenBought: products.price,
-      productId: products.id
+      priceWhenBought: product.price,
+      productId: product.id,
+      product
     });
     localStorage.setItem('currentOrder', JSON.stringify(order));
 

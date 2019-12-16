@@ -1,13 +1,15 @@
 <div fxLayout="row"
-     fxFill>
+     fxFill
+     fxLayoutGap="10px">
   <div fxLayout="row"
        fxLayoutAlign="center center">
-    <div *ngIf="cover" fxFlex="50">
+    <div fxFlex="50">
       <mat-card>
         <mat-card-title-group>
           <mat-card-title>{{cover.name}}</mat-card-title>
         </mat-card-title-group>
-       <mat-card class="mat-card-items mat-elevation-z0">
+
+        <mat-card class="mat-card-items mat-elevation-z0">
           <mat-card-content fxFlex="70">
             <img width="500" height="500">
           </mat-card-content>
@@ -17,15 +19,12 @@
             <p>Farve: {{cover.color}}</p>
             <p>Materiale: {{cover.material}}</p>
             <p>På lager: {{cover.stock}} stk</p>
-            <h1>{{cover.price}},-</h1>
+            <mat-card-header> {{cover.price}},-</mat-card-header>
             <mat-button-toggle (click)="addToBasket()">Add to cart</mat-button-toggle>
-          </mat-card-content>
+        </mat-card-content>
         </mat-card>
       </mat-card>
     </div>
   </div>
-  <h2 *ngIf="!cover"
-      fxFill
-      fxLayoutAlign="center center">
-  </h2>
 </div>
+
