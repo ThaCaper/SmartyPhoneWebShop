@@ -10,7 +10,7 @@ import {
   MatButtonToggleModule,
   MatCardModule, MatDividerModule, MatGridListModule,
   MatIconModule,
-  MatInputModule, MatProgressSpinnerModule,
+  MatInputModule, MatMenuModule,
   MatSelectModule, MatTableModule,
   MatToolbarModule
 } from '@angular/material';
@@ -20,7 +20,9 @@ import {HttpClient, HttpClientModule} from '@angular/common/http';
 import {from} from 'rxjs';
 import {ReactiveFormsModule} from '@angular/forms';
 import { FontPagesComponent } from './pages/font-pages/font-pages.component';
-import { ShoppingCartComponent } from './pages/shoppingCart/shopping-cart.component';
+import { ShoppingCartComponent } from './shoppingCart/shopping-cart.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { MinSideComponent } from './pages/min-side/min-side.component';
 import { CoversListComponent } from './pages/covers/covers-list/covers-list.component';
 import { CoversDetailsComponent } from './pages/covers/covers-details/covers-details.component';
 import { SmartphonesDetailsComponent } from './pages/smartphones/smartphones-details/smartphones-details.component';
@@ -34,6 +36,8 @@ import {FlexModule} from '@angular/flex-layout';
     CreatUserComponent,
     FontPagesComponent,
     ShoppingCartComponent,
+    ContactComponent,
+    MinSideComponent,
     CoversListComponent,
     CoversDetailsComponent,
     SmartphonesDetailsComponent,
@@ -56,7 +60,8 @@ import {FlexModule} from '@angular/flex-layout';
     MatProgressSpinnerModule,
     MatDividerModule,
     MatGridListModule,
-    MatTableModule
+    MatTableModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
