@@ -1,7 +1,7 @@
 import {Product} from './product';
 
 export class OrderLine {
-  productId: number;
+  productId?: number;
   product: Product;
   orderId?: number;
   qty: number;
