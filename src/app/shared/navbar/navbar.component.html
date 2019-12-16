@@ -8,8 +8,22 @@
           <mat-icon class="icon">search</mat-icon>
         </mat-button-toggle>
       </mat-button-toggle-group>
+
       <mat-icon class="icon-spacer">contact_support</mat-icon>
       <mat-icon class="icon-spacer">person</mat-icon>
+
+      <mat-icon class="icon-spacer" routerLink="/contact">contact_support</mat-icon>
+
+
+
+      <button mat-button [matMenuTriggerFor]="afterMenu" class="menu-drop"><mat-icon class="icon-spacer">person</mat-icon></button>
+      <mat-menu #afterMenu="matMenu" xPosition="after">
+        <button mat-menu-item routerLink="/login" *ngIf="getToken()==false">Login</button>
+        <button mat-menu-item routerLink="/min-side" *ngIf="getToken()==true">min side</button>
+        <button mat-menu-item  *ngIf="getToken()==true" (click)="Logout()">Log out</button>
+      </mat-menu>
+
+
       <mat-icon class="icon-spacer" routerLink="/cart">shopping_cart</mat-icon>
     </mat-toolbar-row>
     <mat-toolbar-row class="mat-toolbar-second-row">

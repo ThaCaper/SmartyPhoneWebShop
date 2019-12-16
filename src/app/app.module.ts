@@ -6,11 +6,12 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {
+  _MatMenuDirectivesModule,
   MatButtonModule,
   MatButtonToggleModule,
   MatCardModule, MatDividerModule, MatGridListModule,
   MatIconModule,
-  MatInputModule, MatProgressSpinnerModule,
+  MatInputModule, MatMenuModule, MatProgressSpinnerModule,
   MatSelectModule, MatTableModule,
   MatToolbarModule
 } from '@angular/material';
@@ -56,7 +57,9 @@ import {FlexModule} from '@angular/flex-layout';
     MatProgressSpinnerModule,
     MatDividerModule,
     MatGridListModule,
-    MatTableModule
+    MatTableModule,
+    _MatMenuDirectivesModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
