@@ -13,7 +13,6 @@ export class MinSideComponent implements OnInit {
   id: number;
   user: User;
   userForm = new FormGroup({
-    id: new FormControl({value: '', disabled: true}),
     firstName: new FormControl({value: '', disabled: true}),
     lastName: new FormControl({value: '', disabled: true}),
     email: new FormControl({value: '', disabled: true}),
@@ -33,7 +32,6 @@ export class MinSideComponent implements OnInit {
       .subscribe(userFromRest => {
         this.user = userFromRest;
         this.userForm.patchValue({
-          id: userFromRest.id,
           firstName: userFromRest.firstName,
           lastName: userFromRest.lastName,
           email: userFromRest.email,
