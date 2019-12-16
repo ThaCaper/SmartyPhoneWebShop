@@ -14,14 +14,13 @@ export class CartService {
     if (!order) {
       order = new Order();
     }
-    order.orderLines.push({
-      product: products,
-      qty: 1,
-      priceWhenBought: products.price,
-      productId: products.id
-    });
+    //order.orderLines.push({
+     // product: products,
+      //qty: 1,
+      //priceWhenBought: products.price,
+      //productId: products.id,
+    //});
     localStorage.setItem('currentOrder', JSON.stringify(order));
-
   }
 
   getBasket(): Order {
