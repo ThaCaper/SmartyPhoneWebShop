@@ -6,29 +6,36 @@
   <mat-card-content>
 
 
-    <div class="example-container">
-      <form>
+      <form [formGroup]="userForm" (ngSubmit)="AddUser()">
         <mat-form-field>
-          <input matInput placeholder="First Name" formControlName="firstName">
+          <input matInput placeholder="First Name" formControlName="firstName" required>
         </mat-form-field>
         <mat-form-field>
-          <input matInput placeholder="Last Name" formControlName="lastName">
+          <input matInput placeholder="Last Name" formControlName="lastName" required>
         </mat-form-field>
         <mat-form-field>
-          <input matInput type="Email" placeholder="Email" formControlName="email">
+          <input matInput type="Email" placeholder="Email" formControlName="email" required>
         </mat-form-field>
         <mat-form-field>
-          <input matInput placeholder="phoneNumber" formControlName="phoneNumber">
+          <input matInput placeholder="phoneNumber" formControlName="phoneNumber" required>
         </mat-form-field>
         <mat-form-field>
-          <input matInput placeholder="Street" formControlName="street">
+          <input matInput placeholder="Street" formControlName="street" required>
         </mat-form-field>
         <mat-form-field>
-          <input matInput placeholder="ZipCode" formControlName="zipCode">
+          <input matInput placeholder="ZipCode" formControlName="zipCode" required>
         </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="Country" formControlName="country" required>
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="Username" formControlName="username" required>
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="password" type="password" formControlName="password" required>
+        </mat-form-field><br>
         <button mat-raised-button color="link">Creat</button>
       </form>
-    </div>
 
 
 
