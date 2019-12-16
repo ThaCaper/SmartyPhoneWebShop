@@ -18,4 +18,5 @@ export class SmartphoneService {
   getSmartPhoneById(id: number): Observable<SmartPhone> {
     return this.http.get<SmartPhone>(this.apiUrl + '/' + id);
   }
+
 }

@@ -1,0 +1,12 @@
+.example-card {
+  width: 450px;
+  float: left;
+  margin-left: 15px;
+
+}
+.clearFix{
+  clear: both;
+  display: block;
+  height: 0px;
+
+}

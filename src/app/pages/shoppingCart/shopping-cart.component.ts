@@ -32,7 +32,6 @@ export class ShoppingCartComponent implements OnInit {
   }
 
   calcAmount() {
-
   }
   removeFromCart() {
   }

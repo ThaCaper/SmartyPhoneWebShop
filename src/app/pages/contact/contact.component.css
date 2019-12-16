@@ -1,0 +1,21 @@
+.example-card {
+  max-width: 400px;
+  margin: 10px auto auto;
+  box-shadow: #333333 1px 1px 5px;
+}
+
+.example-header-image {
+
+  background-size: cover;
+}
+
+.infoBox{
+  min-height: 150px;
+  float: left;
+  width: 50%;
+
+}
+
+.menu-drop{
+  margin-top: 15px;
+}

@@ -6,10 +6,11 @@ import {Order} from '../modules/order';
   providedIn: 'root'
 })
 export class CartService {
-
+  orders: Order;
+  productsList: Product[];
   constructor() { }
 
-  addToBasket(product: Product) {
+  addToBasket(products: Product) {
     let order = JSON.parse(localStorage.getItem('currentOrder')) as Order;
     if (!order) {
       order = new Order();
@@ -18,10 +19,10 @@ export class CartService {
       qty: 1,
       priceWhenBought: product.price,
       productId: product.id,
-      product
+      product: products
     });
+    ;
     localStorage.setItem('currentOrder', JSON.stringify(order));
-
   }
 
   getBasket(): Order {
@@ -31,5 +32,11 @@ export class CartService {
     } else {
       return null;
     }
+  }
+
+  getTotal() {
+  return this.orders.orderLines
+    .map(ol => ol.product.price * ol.qty)
+    .reduce((a, b) => a + b, 0);
   }
 }

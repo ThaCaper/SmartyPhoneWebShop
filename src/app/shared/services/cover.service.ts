@@ -18,3 +18,4 @@ export class CoverService {
     return this.http.get<Cover>(this.apiUrl + '/' + id);
   }
 }
+
