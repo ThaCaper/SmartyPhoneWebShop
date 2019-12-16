@@ -3,13 +3,13 @@ import { Routes, RouterModule } from '@angular/router';
 import {LoginComponent} from './pages/login/login.component';
 import {CreatUserComponent} from './pages/creat-user/creat-user.component';
 import {FontPagesComponent} from './pages/font-pages/font-pages.component';
-import {ContactComponent} from './pages/contact/contact.component';
-import {MinSideComponent} from './pages/min-side/min-side.component';
 import {CoversListComponent} from './pages/covers/covers-list/covers-list.component';
 import {CoversDetailsComponent} from './pages/covers/covers-details/covers-details.component';
 import {SmartPhonesListComponent} from './pages/smartphones/smartphones-list/smartphones-list.component';
 import {SmartphonesDetailsComponent} from './pages/smartphones/smartphones-details/smartphones-details.component';
 import {ShoppingCartComponent} from './pages/shoppingCart/shopping-cart.component';
+import {MinSideComponent} from './pages/min-side/min-side.component';
+import {ContactComponent} from './pages/contact/contact.component';
 
 
 const routes: Routes = [
