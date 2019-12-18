@@ -20,6 +20,7 @@ export class CartService {
       qty: 1,
       priceWhenBought: products.price,
       productId: products.id,
+      product: products
     });
     ;
     localStorage.setItem('currentOrder', JSON.stringify(order));
