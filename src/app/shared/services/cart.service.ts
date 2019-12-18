@@ -17,8 +17,8 @@ export class CartService {
     }
     order.orderLines.push({
       qty: 1,
-      priceWhenBought: product.price,
-      productId: product.id,
+      priceWhenBought: products.price,
+      productId: products.id,
       product: products
     });
     ;
